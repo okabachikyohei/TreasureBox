@@ -4538,6 +4538,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1074394915}
   - 132: {fileID: 1074394914}
+  - 114: {fileID: 1074394916}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -4581,6 +4582,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &1074394916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 990d9aa53cae0544584c00748e2bab5e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2074258118}
+  m_GameObject: {fileID: 1074394913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3cc7897c78b9e4b871f778ccba4c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLimit: 30
 --- !u!1 &1089858802
 GameObject:
   m_ObjectHideFlags: 0
@@ -8764,6 +8778,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1981166547}
   - 132: {fileID: 1981166546}
+  - 114: {fileID: 1981166549}
   - 114: {fileID: 1981166548}
   m_Layer: 0
   m_Name: SnowManPoint
@@ -8813,6 +8828,18 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981166545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 823ec0283e9968b42811013818aae56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1981166549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: ba5f193729c72a44ab59b1e1d18fcdcf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661881894}
   m_GameObject: {fileID: 1981166545}
   m_Enabled: 1
   m_EditorHideFlags: 0

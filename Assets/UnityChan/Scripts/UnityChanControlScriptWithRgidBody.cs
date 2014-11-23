@@ -56,6 +56,10 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 	static int restState = Animator.StringToHash("Base Layer.Rest");
 
+	private GameObject timer = GameObject.Find("Timer"); 
+
+	private int beAttackedLostTime; 
+
 // 初期化
 	void Start ()
 	{
@@ -248,6 +252,8 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	}
 
 	void BeAttacked() {
+		beAttackedLostTime = Random.Range (3, 11);
+		timer.SendMessage ("LostTime", beAttackedLostTime);
 		anim.SetTrigger ("Attacked");
 	}
 	
