@@ -70,7 +70,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		orgColHight = col.height;
 		orgVectColCenter = col.center;
 
-		genrateTreasureBox (10);
+		genrateTreasureBox (5);
 }
 	
 	
@@ -241,7 +241,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
 	void genrateTreasureBox(int num) {
 		for (int i = 0; i < num; i++) {
-			Vector3 position = new Vector3(Random.Range(0, 200), 0, Random.Range(0, 200));
+			Vector3 position = new Vector3(Random.Range(-65, 65), 0, Random.Range(-65, 65));
 			Quaternion rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360), 0f));
 			Instantiate (treasureBox, position, rotation);	
 		}
