@@ -110,7 +110,8 @@ MonoBehaviour:
   seNotClear: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
   seScream: {fileID: 8300000, guid: b1981470de344354a84a1884ed01045f, type: 3}
   seGet: {fileID: 8300000, guid: b1981470de344354a84a1884ed01045f, type: 3}
-  seBlank: {fileID: 8300000, guid: b1981470de344354a84a1884ed01045f, type: 3}
+  seAttack: {fileID: 0}
+  seOpen: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

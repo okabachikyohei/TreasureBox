@@ -2715,19 +2715,23 @@ Prefab:
     - target: {fileID: 8200000, guid: fc828eed512aa0e46a1b28f5eea06bef, type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 953197a53f1dd9e438ba06ba0a7b475b, type: 3}
     - target: {fileID: 11400000, guid: fc828eed512aa0e46a1b28f5eea06bef, type: 2}
       propertyPath: seGet
       value: 
-      objectReference: {fileID: 8300000, guid: 53309b91d6e132a49bd5a5a444f51d46, type: 3}
+      objectReference: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
     - target: {fileID: 11400000, guid: fc828eed512aa0e46a1b28f5eea06bef, type: 2}
       propertyPath: seBlank
       value: 
-      objectReference: {fileID: 8300000, guid: aa8da76f2ab17744da65ea5e26516def, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: fc828eed512aa0e46a1b28f5eea06bef, type: 2}
       propertyPath: seOpen
       value: 
       objectReference: {fileID: 8300000, guid: 3f2e24525d9eb294a921c7f1b286e5cf, type: 3}
+    - target: {fileID: 11400000, guid: fc828eed512aa0e46a1b28f5eea06bef, type: 2}
+      propertyPath: seAttack
+      value: 
+      objectReference: {fileID: 8300000, guid: a77f43ca114d07944b9cdb76de7169c1, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc828eed512aa0e46a1b28f5eea06bef, type: 2}
   m_RootGameObject: {fileID: 853714285}
@@ -3627,8 +3631,8 @@ MonoBehaviour:
   seClear: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
   seNotClear: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
   seScream: {fileID: 8300000, guid: b1981470de344354a84a1884ed01045f, type: 3}
-  seGet: {fileID: 8300000, guid: 53309b91d6e132a49bd5a5a444f51d46, type: 3}
-  seBlank: {fileID: 8300000, guid: aa8da76f2ab17744da65ea5e26516def, type: 3}
+  seGet: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
+  seAttack: {fileID: 8300000, guid: a77f43ca114d07944b9cdb76de7169c1, type: 3}
   seOpen: {fileID: 8300000, guid: 3f2e24525d9eb294a921c7f1b286e5cf, type: 3}
 --- !u!82 &853714287
 AudioSource:
@@ -3639,7 +3643,7 @@ AudioSource:
   m_GameObject: {fileID: 853714285}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 953197a53f1dd9e438ba06ba0a7b475b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
