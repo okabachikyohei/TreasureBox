@@ -107,11 +107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seClear: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
-  seNotClear: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
+  seNotClear: {fileID: 8300000, guid: e62b0cf49f9905347a879b3f8488a783, type: 3}
   seScream: {fileID: 8300000, guid: b1981470de344354a84a1884ed01045f, type: 3}
-  seGet: {fileID: 8300000, guid: b1981470de344354a84a1884ed01045f, type: 3}
-  seAttack: {fileID: 0}
-  seOpen: {fileID: 0}
+  seGet: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
+  seAttack: {fileID: 8300000, guid: a77f43ca114d07944b9cdb76de7169c1, type: 3}
+  seOpen: {fileID: 8300000, guid: 53309b91d6e132a49bd5a5a444f51d46, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
