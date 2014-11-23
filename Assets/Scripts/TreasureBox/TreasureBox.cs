@@ -13,6 +13,10 @@ public class TreasureBox : MonoBehaviour {
 
 	public int score = 1;
 
+	public int lostTimeByTreasure = 3;
+
+	Timer timer;
+
 //	public AnimationClip clip;
 	// Use this for initialization
 	void Start () {
@@ -20,6 +24,9 @@ public class TreasureBox : MonoBehaviour {
 		anim.enabled = false;
 		unitychan = GameObject.FindGameObjectWithTag ("Player");
 		snowManPoint = GameObject.Find ("SnowManPoint");
+
+		timer = GameObject.Find ("Timer").GetComponent<Timer> ();
+
 
 		foreach (Transform child in transform){
 			if(child.tag == "Snowman"){
@@ -57,6 +64,10 @@ public class TreasureBox : MonoBehaviour {
 				snowManPoint.SendMessage("AddSnowManPoint" , score);
 				soundEffect.PlayGet();
 				soundEffect.PlayScoreUp();
+			}
+
+			if (scythe.renderer.enabled) { 
+				timer.LostTime(lostTimeByTreasure);
 			}
 
 			Destroy(gameObject, 3f);
