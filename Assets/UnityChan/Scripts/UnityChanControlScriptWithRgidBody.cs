@@ -49,12 +49,15 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
 	private GameObject cameraObject;	// メインカメラへの参照
 	public Transform treasureBox;
+
 		
 // アニメーター各ステートへの参照
 	static int idleState = Animator.StringToHash("Base Layer.Idle");
 	static int locoState = Animator.StringToHash("Base Layer.Locomotion");
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 	static int restState = Animator.StringToHash("Base Layer.Rest");
+
+	SoundEffect soundEffect;
 
 // 初期化
 	void Start ()
@@ -71,6 +74,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		orgVectColCenter = col.center;
 
 		genrateTreasureBox (5);
+		soundEffect = GameObject.Find("SoundController").GetComponent<SoundEffect>();
 }
 	
 	
@@ -249,6 +253,8 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
 	void BeAttacked() {
 		anim.SetTrigger ("Attacked");
+		soundEffect.PlayScream();
+		soundEffect.PlayAttack();
 	}
 	
 }

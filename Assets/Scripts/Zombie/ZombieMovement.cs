@@ -35,7 +35,7 @@ public class ZombieMovement : MonoBehaviour {
 		if (collider.gameObject.tag == "Player") {
 			isTriggerEnter = true;
 			anim.SetTrigger("PlayerEnter");
-			soundEffect.PlayScream();
+			soundEffect.PlayAttack();
 		}
 	}
 	
