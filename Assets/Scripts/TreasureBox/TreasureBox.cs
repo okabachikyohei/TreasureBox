@@ -46,7 +46,7 @@ public class TreasureBox : MonoBehaviour {
 			Debug.Log("OnTriggerEnter called!!");
 			anim.enabled = true;
 			anim.SetBool ("OpenBox", true);
-			unitychan.SendMessage ("BoxClicked");
+			//unitychan.SendMessage ("BoxClicked");
 			showItem();
 
 			if (snowman.renderer.enabled) {
