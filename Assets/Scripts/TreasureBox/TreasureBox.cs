@@ -9,7 +9,7 @@ public class TreasureBox : MonoBehaviour {
 	private GameObject snowman;
 	private GameObject scythe;
 	private GameObject snowManPoint;
-	public GameObject BoxOpenEffect;
+	public GameObject OpenEffect;
 
 	SoundEffect soundEffect;
 
@@ -71,8 +71,8 @@ public class TreasureBox : MonoBehaviour {
 				timer.LostTime(lostTimeByTreasure);
 				soundEffect.PlayRemainTimeDown();
 			}
-
 			Destroy(gameObject, 3f);
+
 		}
 	}
 
@@ -86,7 +86,7 @@ public class TreasureBox : MonoBehaviour {
 			snowman.renderer.enabled = true;	
 		}
 		soundEffect.PlayOpen();
-		Instantiate (BoxOpenEffect,transform.position,BoxOpenEffect.transform.rotation);
+		Instantiate (OpenEffect,transform.position,OpenEffect.transform.rotation);
 	}
 
 //	void OnMouseDown() {
