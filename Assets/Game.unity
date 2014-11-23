@@ -16858,7 +16858,7 @@ Prefab:
     - target: {fileID: 11400002, guid: 8c049a689d230dc4f912f40abfda0219, type: 2}
       propertyPath: BoxOpenEffect
       value: 
-      objectReference: {fileID: 100004, guid: 21b8c5169667e5146b2687ad98b74f69, type: 2}
+      objectReference: {fileID: 100000, guid: 35d99e56ffbbc7241b0bccba31b0a965, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c049a689d230dc4f912f40abfda0219, type: 2}
   m_RootGameObject: {fileID: 1641230306}
@@ -87659,7 +87659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212d296f300df4649a87d37dd9b291fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxOpenEffect: {fileID: 100004, guid: 21b8c5169667e5146b2687ad98b74f69, type: 2}
+  OpenEffect: {fileID: 100000, guid: 35d99e56ffbbc7241b0bccba31b0a965, type: 2}
   score: 1
   lostTimeByTreasure: 3
 --- !u!95 &1641230311

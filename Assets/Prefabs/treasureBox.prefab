@@ -380,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212d296f300df4649a87d37dd9b291fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OpenEffect: {fileID: 100000, guid: 35d99e56ffbbc7241b0bccba31b0a965, type: 2}
   score: 1
   lostTimeByTreasure: 3
 --- !u!114 &11400004
