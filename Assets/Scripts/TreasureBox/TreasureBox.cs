@@ -50,7 +50,7 @@ public class TreasureBox : MonoBehaviour {
 //		anim.SetBool ("OpenBox", true);
 //	}
 
-	void OnTriggerEnter(Collider collider) {
+	void OnTriggerExit(Collider collider) {
 		if (collider.gameObject.CompareTag ("Player")) {
 			Debug.Log("OnTriggerEnter called!!");
 			anim.enabled = true;
