@@ -112,6 +112,8 @@ MonoBehaviour:
   seGet: {fileID: 8300000, guid: fa51d8565cd89fe48b44bb3c10370c71, type: 3}
   seAttack: {fileID: 8300000, guid: a77f43ca114d07944b9cdb76de7169c1, type: 3}
   seOpen: {fileID: 8300000, guid: 53309b91d6e132a49bd5a5a444f51d46, type: 3}
+  seScoreUp: {fileID: 8300000, guid: cf35efe61c456a541a15ac89ec8dac60, type: 3}
+  seRemainTimeDown: {fileID: 8300000, guid: 591be527c82e3ce4fba0dd9dcf271447, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

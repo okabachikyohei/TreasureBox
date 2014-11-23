@@ -56,6 +56,7 @@ public class TreasureBox : MonoBehaviour {
 			if (snowman.renderer.enabled) {
 				snowManPoint.SendMessage("AddSnowManPoint" , score);
 				soundEffect.PlayGet();
+				soundEffect.PlayScoreUp();
 			}
 
 			Destroy(gameObject, 3f);
