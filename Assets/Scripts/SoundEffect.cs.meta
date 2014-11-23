@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 95090ad257396e240bc704714ac984a5
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - seClear: {instanceID: 0}
+  - seNotClear: {instanceID: 0}
+  - seScream: {instanceID: 0}
+  - seGet: {instanceID: 0}
+  - seBlank: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

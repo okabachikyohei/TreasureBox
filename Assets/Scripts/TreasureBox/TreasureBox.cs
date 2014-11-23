@@ -9,6 +9,7 @@ public class TreasureBox : MonoBehaviour {
 	private GameObject snowman;
 	private GameObject scythe;
 	private GameObject snowManPoint;
+	SoundEffect soundEffect;
 
 	public int score = 1;
 
@@ -29,6 +30,8 @@ public class TreasureBox : MonoBehaviour {
 				scythe.renderer.enabled = false;
 			} 
 		}
+
+		soundEffect = GameObject.Find("SoundController").GetComponent<SoundEffect>();
 	}
 	
 	// Update is called once per frame
@@ -49,8 +52,10 @@ public class TreasureBox : MonoBehaviour {
 			//unitychan.SendMessage ("BoxClicked");
 			showItem();
 
+
 			if (snowman.renderer.enabled) {
 				snowManPoint.SendMessage("AddSnowManPoint" , score);
+				soundEffect.PlayGet();
 			}
 
 			Destroy(gameObject, 3f);
