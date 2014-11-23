@@ -26,8 +26,7 @@ public class TreasureBox : MonoBehaviour {
 		snowManPoint = GameObject.Find ("SnowManPoint");
 
 		timer = GameObject.Find ("Timer").GetComponent<Timer> ();
-
-
+		
 		foreach (Transform child in transform){
 			if(child.tag == "Snowman"){
 				snowman = child.gameObject;
@@ -58,7 +57,7 @@ public class TreasureBox : MonoBehaviour {
 			anim.SetBool ("OpenBox", true);
 			//unitychan.SendMessage ("BoxClicked");
 			showItem();
-
+			unitychan.SendMessage("genrateTreasureBox", 1);
 
 			if (snowman.renderer.enabled) {
 				snowManPoint.SendMessage("AddSnowManPoint" , score);
