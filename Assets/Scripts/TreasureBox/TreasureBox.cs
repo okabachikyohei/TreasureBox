@@ -8,6 +8,9 @@ public class TreasureBox : MonoBehaviour {
 	private GameObject unitychan;
 	private GameObject snowman;
 	private GameObject scythe;
+	private GameObject snowManPoint;
+
+	public int score = 1;
 
 //	public AnimationClip clip;
 	// Use this for initialization
@@ -15,6 +18,7 @@ public class TreasureBox : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		anim.enabled = false;
 		unitychan = GameObject.FindGameObjectWithTag ("Player");
+		snowManPoint = GameObject.Find ("SnowManPoint");
 
 		foreach (Transform child in transform){
 			if(child.tag == "Snowman"){
@@ -44,6 +48,11 @@ public class TreasureBox : MonoBehaviour {
 			anim.SetBool ("OpenBox", true);
 			//unitychan.SendMessage ("BoxClicked");
 			showItem();
+
+			if (snowman.renderer.enabled) {
+				snowManPoint.SendMessage("AddSnowManPoint" , score);
+			}
+
 			Destroy(gameObject, 3f);
 		}
 	}
