@@ -41,8 +41,8 @@ GUITexture:
     serializedVersion: 2
     x: -177.5
     y: -71
-    width: 355
-    height: 142
+    width: 442
+    height: 280
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
