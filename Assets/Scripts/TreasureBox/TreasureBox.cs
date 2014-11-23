@@ -9,6 +9,8 @@ public class TreasureBox : MonoBehaviour {
 	private GameObject snowman;
 	private GameObject scythe;
 	private GameObject snowManPoint;
+	public GameObject BoxOpenEffect;
+
 	SoundEffect soundEffect;
 
 	public int score = 1;
@@ -84,6 +86,7 @@ public class TreasureBox : MonoBehaviour {
 			snowman.renderer.enabled = true;	
 		}
 		soundEffect.PlayOpen();
+		Instantiate (BoxOpenEffect,transform.position,BoxOpenEffect.transform.rotation);
 	}
 
 //	void OnMouseDown() {
