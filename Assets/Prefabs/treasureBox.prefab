@@ -246,8 +246,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .5, y: 1, z: .699999988}
-  m_Center: {x: 0, y: .5, z: .600000024}
+  m_Size: {x: .5, y: 1, z: .300000012}
+  m_Center: {x: 0, y: .5, z: 0}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -328,6 +328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212d296f300df4649a87d37dd9b291fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 1
+  lostTimeByTreasure: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
