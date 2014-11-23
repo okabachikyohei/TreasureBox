@@ -68,6 +68,7 @@ public class TreasureBox : MonoBehaviour {
 
 			if (scythe.renderer.enabled) { 
 				timer.LostTime(lostTimeByTreasure);
+				soundEffect.PlayRemainTimeDown();
 			}
 
 			Destroy(gameObject, 3f);

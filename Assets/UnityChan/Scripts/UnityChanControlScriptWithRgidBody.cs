@@ -263,6 +263,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		anim.SetTrigger ("Attacked");
 		soundEffect.PlayScream();
 		soundEffect.PlayAttack();
+		soundEffect.PlayRemainTimeDown();
 	}
 	
 }
