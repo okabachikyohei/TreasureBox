@@ -57,11 +57,11 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 	static int restState = Animator.StringToHash("Base Layer.Rest");
 
-	private GameObject timer = GameObject.Find("Timer"); 
-
 	private int beAttackedLostTime; 
 
 	SoundEffect soundEffect;
+
+	Timer timer;
 
 // 初期化
 	void Start ()
@@ -79,6 +79,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
 		genrateTreasureBox (5);
 		soundEffect = GameObject.Find("SoundController").GetComponent<SoundEffect>();
+		timer = GameObject.Find ("Timer").GetComponent<Timer> ();
 }
 	
 	
@@ -256,8 +257,9 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	}
 
 	void BeAttacked() {
+		timer = GameObject.Find ("Timer").GetComponent<Timer> ();
 		beAttackedLostTime = Random.Range (3, 11);
-		timer.SendMessage ("LostTime", beAttackedLostTime);
+		timer.LostTime (beAttackedLostTime);
 		anim.SetTrigger ("Attacked");
 		soundEffect.PlayScream();
 		soundEffect.PlayAttack();
