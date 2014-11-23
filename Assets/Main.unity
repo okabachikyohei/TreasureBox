@@ -6135,6 +6135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212d296f300df4649a87d37dd9b291fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 1
 --- !u!95 &1427675168
 Animator:
   serializedVersion: 3
@@ -8588,6 +8589,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1981166547}
   - 132: {fileID: 1981166546}
+  - 114: {fileID: 1981166548}
   m_Layer: 0
   m_Name: SnowManPoint
   m_TagString: Untagged
@@ -8631,6 +8633,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &1981166548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981166545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 823ec0283e9968b42811013818aae56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2004379704
 GameObject:
   m_ObjectHideFlags: 0
