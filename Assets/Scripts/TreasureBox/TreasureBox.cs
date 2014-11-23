@@ -70,7 +70,8 @@ public class TreasureBox : MonoBehaviour {
 			scythe.renderer.enabled = true;	
 		} else if (randomNum >= 11 && randomNum < 60) {
 			snowman.renderer.enabled = true;	
-		} 
+		}
+		soundEffect.PlayOpen();
 	}
 
 //	void OnMouseDown() {

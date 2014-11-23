@@ -9,6 +9,7 @@ public class ZombieMovement : MonoBehaviour {
 
 	private Animator anim;
 	private bool isTriggerEnter;
+	SoundEffect soundEffect;
 
 	void Awake () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -17,6 +18,7 @@ public class ZombieMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
+		soundEffect = GameObject.Find("SoundController").GetComponent<SoundEffect>();
 	}
 	
 	// Update is called once per frame
@@ -33,6 +35,7 @@ public class ZombieMovement : MonoBehaviour {
 		if (collider.gameObject.tag == "Player") {
 			isTriggerEnter = true;
 			anim.SetTrigger("PlayerEnter");
+			soundEffect.PlayScream();
 		}
 	}
 	
