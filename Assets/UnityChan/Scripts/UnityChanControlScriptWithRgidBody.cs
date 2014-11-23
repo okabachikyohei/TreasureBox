@@ -57,7 +57,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 	static int restState = Animator.StringToHash("Base Layer.Rest");
 
-	private int beAttackedLostTime; 
+	private int beAttackedLostTime = 3; 
 
 	SoundEffect soundEffect;
 
@@ -258,7 +258,6 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
 	void BeAttacked() {
 		timer = GameObject.Find ("Timer").GetComponent<Timer> ();
-		beAttackedLostTime = Random.Range (3, 11);
 		timer.LostTime (beAttackedLostTime);
 		anim.SetTrigger ("Attacked");
 		soundEffect.PlayScream();
